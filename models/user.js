@@ -24,7 +24,7 @@ const userSchema = new mongoose.Schema({
 				type : Array
 			},
 			productId : {
-				type : ObjectId
+				type : Object
 			},
 			productName : {
 				type : String,
@@ -34,4 +34,6 @@ const userSchema = new mongoose.Schema({
 				type : Number
 			}
 		}]
-})
+});
+
+module.exports = mongoose.model("User", userSchema);
